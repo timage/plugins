@@ -3,7 +3,7 @@
 Plugin Name: Standard Image Quality
 Plugin URI: https://github.com/eightbit/plugins/tree/master/standard-image-quality
 Description: Changes WordPress' default image quality from 90% to 100%.
-Version: 1.0
+Version: 1.1
 Author: Michael Novotny
 Author URI: http://manovotny.com
 Author Email: michael@8bit.io
@@ -22,7 +22,7 @@ class Standard_Image_Quality {
 	function __construct() {
 	
 		// jpeg quality filter
-		add_filter( 'jpeg_quality', 'full_jpeg_quality' );
+		add_filter( 'jpeg_quality', array( &$this, 'full_jpeg_quality' ) );
 	
 	} // end constructor
 	
