@@ -3,6 +3,7 @@ rtl-tester/languages/rtl-tester-he_IL.po
 rtl-tester/readme.txt
 rtl-tester/rtl-tester.php
 rtl-tester/rtl-tester.pot
+jetpack/*
 digg-digg/*
 developer/*
 wordpress-beta-tester/*
@@ -11,3 +12,4 @@ log-deprecated-notices/*
 monster-widget/*
 rewrite-rules-inspector/*
 debug-bar-cron/*
+wordpress-importer/*
