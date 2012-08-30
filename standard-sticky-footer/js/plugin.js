@@ -17,12 +17,17 @@
 		
 		
 		
-		// check browser size on load and resize
+		// check browser size on load, ready, and resize
 		$( window ).load( function() { 
 		
 			checkBrowserSize( $ );
 			
 		} )
+		.ready( function() {
+		
+			checkBrowserSize( $ );
+			
+		} );
 		.resize( function() {
 		
 			checkBrowserSize( $ );
