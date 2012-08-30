@@ -25,7 +25,7 @@
 		
 			checkBrowserSize( $ );
 			
-		} );
+		} )
 		.resize( function() {
 		
 			checkBrowserSize( $ );
