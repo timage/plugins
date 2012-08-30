@@ -15,8 +15,6 @@
 
 	$( function() {
 		
-		
-		
 		// check browser size on load, ready, and resize
 		$( window ).load( function() { 
 		
@@ -50,12 +48,11 @@
 function checkBrowserSize( $ ) {
 	
 	// get elements
-	var $browser = $( window );
 	var $footer = $( '#footer' );
 	var $wrapper = $( '#wrapper' );
 	
 	// check if the content, including padding and margins, is not enough to fill the browser window
-	if ( $browser.height() > ( $wrapper.offset().top + $wrapper.outerHeight( true ) + $footer.height() ) ) {
+	if ( $( window ).height() > ( $wrapper.offset().top + $wrapper.outerHeight( true ) + $footer.height() ) ) {
 		
 		// not enough content to fill browser, stick footer
 		$footer.addClass( 'stick' );
