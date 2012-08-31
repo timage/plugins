@@ -48,11 +48,20 @@
 function checkBrowserSize( $ ) {
 	
 	// get elements
+	var $browser = $( window );
 	var $footer = $( '#footer' );
 	var $wrapper = $( '#wrapper' );
 	
+	// check for all the necessary elements
+	if ( $browser == null || $footer == null || $wrapper == null ) {
+		
+		// we do not have the necessary items to determine footer stickiness, so bail
+		return;
+		
+	} // end if
+	
 	// check if the content, including padding and margins, is not enough to fill the browser window
-	if ( $( window ).height() > ( $wrapper.offset().top + $wrapper.outerHeight( true ) + $footer.height() ) ) {
+	if ( $browser.height() > ( $wrapper.offset().top + $wrapper.outerHeight( true ) + $footer.height() ) ) {
 		
 		// not enough content to fill browser, stick footer
 		$footer.addClass( 'stick' );

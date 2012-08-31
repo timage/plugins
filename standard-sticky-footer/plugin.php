@@ -3,7 +3,7 @@
 Plugin Name: Standard Sticky Footer
 Plugin URI: https://github.com/eightbit/plugins/tree/master/standard-sticky-footer
 Description: Forces the footer to stick the bottom of the browser window, if there is not enough content to fill the screen.
-Version: 1.0
+Version: 1.0.1
 Author: Michael Novotny
 Author URI: http://manovotny.com
 Author Email: michael@8bit.io
