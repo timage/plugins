@@ -52,8 +52,21 @@ function checkBrowserSize( $ ) {
 	var $footer = $( '#footer' );
 	var $wrapper = $( '#wrapper' );
 	
+	/**
+	 * We expect a "wrapper" when the website is "online". Otherwise, we expect to
+	 * have an "offline-wrapper" when the websites is "offline".
+	 */
+	
+	// check for wrapper
+	if ( $wrapper.length === 0 ) {
+		
+		// we do not have a wrapper, so perhaps the webstite is offline, so try and get offline wrapper instead
+		$wrapper = $( '#offline-wrapper' );
+		
+	} // end if
+	
 	// check for all the necessary elements
-	if ( $browser == null || $footer == null || $wrapper == null ) {
+	if ( $browser.length === 0 || $footer.length === 0 || $wrapper.length === 0 ) {
 		
 		// we do not have the necessary items to determine footer stickiness, so bail
 		return;
