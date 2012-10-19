@@ -22,25 +22,12 @@ class Standard_Disable_Comments {
 	function __construct() {
 	
 		// comments open filter
-		add_action( 'comments_open', array( &$this, 'disable_comments' ), 20, 2 );
+		add_action( 'comments_open', '__return_false', 20, 2 );
 		
 		// pings open filter
-		add_action( 'pings_open', array( &$this, 'disable_comments' ), 20, 2 );
+		add_action( 'pings_open', '__return_false', 20, 2 );
 	
 	} // end constructor
-	
-	
-	/* Filters
-	---------------------------------------------------------------------------------- */
-	
-	/**
-	 * Disables comments across the entire site.
-	 */
-	function disable_comments() {
-	
-		return false;
-		
-	} // end disable_comments
 
 } // end class
 
