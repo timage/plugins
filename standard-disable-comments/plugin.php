@@ -22,10 +22,10 @@ class Standard_Disable_Comments {
 	function __construct() {
 	
 		// comments open filter
-		add_action( 'comments_open', '__return_false', 20, 2 );
+		add_filter( 'comments_open', '__return_false' );
 		
 		// pings open filter
-		add_action( 'pings_open', '__return_false', 20, 2 );
+		add_filter( 'pings_open', '__return_false' );
 	
 	} // end constructor
 
@@ -34,6 +34,3 @@ class Standard_Disable_Comments {
 
 // instantiate plugin
 new Standard_Disable_Comments();
-
-
-?>
