@@ -38,7 +38,7 @@ class Standard_Gist {
         add_shortcode( 'gist', array( &$this, 'standard_gist_shortcode' ) );
 
         // Register scripts and styles.
-        add_action( 'wp_enqueue_scripts', array( &$this, 'standard_gist_enqueue_scripts' ), 11 );
+        add_action( 'wp_enqueue_scripts', array( &$this, 'standard_gist_enqueue_scripts' ), 1000 );
 
     } // end constructor
 
