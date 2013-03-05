@@ -36,7 +36,7 @@ class Standard_Sticky_Footer {
 	function __construct() {
 		
 		// register scripts and styles
-		add_action( 'wp_enqueue_scripts', array( &$this, 'standard_sticky_footer_enqueue_scripts' ), 11 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'standard_sticky_footer_enqueue_scripts' ), 11 );
 		
 	} // end constructor
 	

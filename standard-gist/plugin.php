@@ -35,10 +35,10 @@ class Standard_Gist {
     function __construct() {
 
         // Add shortcode hook.
-        add_shortcode( 'gist', array( &$this, 'standard_gist_shortcode' ) );
+        add_shortcode( 'gist', array( $this, 'standard_gist_shortcode' ) );
 
         // Register scripts and styles.
-        add_action( 'wp_enqueue_scripts', array( &$this, 'standard_gist_enqueue_scripts' ), 1000 );
+        add_action( 'wp_enqueue_scripts', array( $this, 'standard_gist_enqueue_scripts' ), 1000 );
 
     } // end constructor
 

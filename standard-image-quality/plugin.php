@@ -22,7 +22,7 @@ class Standard_Image_Quality {
 	function __construct() {
 	
 		// jpeg quality filter
-		add_filter( 'jpeg_quality', array( &$this, 'full_jpeg_quality' ) );
+		add_filter( 'jpeg_quality', array( $this, 'full_jpeg_quality' ) );
 	
 	} // end constructor
 	
