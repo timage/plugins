@@ -3,7 +3,7 @@
 Plugin Name: Standard Gist
 Plugin URI: https://github.com/eightbit/plugins/tree/master/standard-gist
 Description: Adds support for GitHub Gist embeds to Standard.
-Version: 1.0.1
+Version: 1.0.2
 Author: Michael Novotny
 Author URI: http://manovotny.com
 Author Email: manovotny@gmail.com
