@@ -1,4 +1,4 @@
-# Standard Require Login
+# Standard PHP Text Widget
 
 ## Description
 
