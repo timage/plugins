@@ -4,6 +4,14 @@
 
 Forces the footer to stick the bottom of the browser window, if there is not enough content to fill the screen.
 
+**Before**:
+
+![Before plugin is activated](preview-before.png)
+
+**After**:
+
+![After plugin is activated](preview-after.png)
+
 ## Installation
 
 There are two ways to install WordPress plugins: via the WordPress Dashboard (recommended) and via FTP. 
