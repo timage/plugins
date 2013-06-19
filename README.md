@@ -23,9 +23,9 @@ In order for plugins to be accepted into this repository, they must adhere to th
 
 ### The Long Version
 
-8BIT has published [a series of blog posts](TODO) specifically targeting new developers or new users of GitHub. 
+8BIT has published [a series of blog posts](http://8bit.io/standard-on-github/) specifically targeting new developers or new users of GitHub. 
 
-To get started, be sure to read [the series](TODO) in its entirety.
+To get started, be sure to read [the series](http://8bit.io/standard-on-github/) in its entirety.
 
 ## FAQ's
 
